@@ -7,12 +7,15 @@
 
     <title>Activity 8: Transitions</title>
     <style>
+
+
      .transition1{
        background-color: red;
        border: 1px solid black;
        position: relative;
        overflow:hidden;
      }
+
      .transition1::before{
        content: 'Hi';
        display: block;
@@ -23,14 +26,92 @@
        top: -100%;
        transition: top 1s;
      }
+
      .transition1:hover::before{
        top: 0;
      }
+
+
+
+
+
+
+
+
+     @keyframes animation2 {
+
+     from {opacity: 1; }
+     to  {opacity: 0; }
+
+    }
+
+    .transition2:hover{
+
+      animation: animation2 2s infinite;
+      
+    }
+
+
+
+
+
+
+
+    @keyframes animation3 {
+
+    from {width: 200px; }
+    to  {width: 600px; }
+
+    }
+
      .transition3{
        width: 200px;
        height: 100px;
        border:1px solid black;
+     
      }
+
+     .transition3:hover{
+      
+       animation-name: animation3;
+       animation-duration: 2s;
+     }
+
+
+
+
+
+
+
+
+
+     @keyframes animation4 {
+      0% {color:black; }
+      25%  {color:red; }
+      50%  {color:yellow; }
+      75%  {color:green; }
+      100% {color:rgb(255, 0, 255); }
+
+      }
+
+
+      .transition4:hover{
+        
+          animation: animation4 5s infinite;
+
+      }
+
+
+
+
+
+   
+        @keyframes animation5{ 
+            0%{  transform: rotate(0deg); } 
+            100%{  transform: rotate(360deg);   } 
+        }
+
+
      .transition5{
        width: 200px;
        height: 200px;
@@ -40,6 +121,19 @@
        justify-content: center;
        padding: 10px;
      }
+
+
+
+
+     .transition5:hover{ 
+            animation: animation5 1s infinite; 
+        } 
+
+
+
+
+
+
     </style>
   </head>
   <body>
