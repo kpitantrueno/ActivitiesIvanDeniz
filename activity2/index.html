@@ -1,91 +1,116 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>Activity 2: CSS positioning</title>
-    <!-- please, don't touch this styles -->
-    <style>
-     #container{
-       border: 1px solid #000;
-       height: 500px;
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Activity 2: CSS positioning</title>
+  <!-- please, don't touch this styles -->
+  <style>
+    #container {
+      border: 1px solid #000;
+      height: 500px;
 
 
-       /*PUSE ESTO PARA QUE FUNCIONARA LO DE 
+      /*PUSE ESTO PARA QUE FUNCIONARA LO DE 
        COLOCARLO EN EL BORDE INFERIOR IZQUIERDO*/
-       position: relative;
-       
-     }
-    </style>
+      position: relative;
+
+    }
+  </style>
 
 
-    <!-- Your styles here -->
-    <style>
+  <!-- Your styles here -->
+  <style>
+    #first_block {
 
-      #first_block{
-
-      width:100px;
-      height:50px;
+      width: 100px;
+      height: 50px;
       background: red;
       position: fixed;
       overflow: hidden;
       top: 0px;
       right: 0px;
-      
-      
-      }
 
 
-      #second_block{
-
-        width:100px;
-        height:50px;
-        background: blue;
-        position: fixed;
-        overflow: scroll;
-        top: 0px;
-        left: 0%;
-
-      }
+    }
 
 
-      .third_block{
+    #second_block {
 
-        width: 50%;
-        background: gray;
-        position: absolute;
-        bottom: 0px;
-        left: 0px;
+      width: 100px;
+      height: 50px;
+      background: blue;
+      position: fixed;
+      overflow: scroll;
+      top: 0px;
+      left: 0%;
 
-      }
+    }
 
 
-      .fourth_block{
+    .third_block {
+
+      width: 50%;
+      background: gray;
+      position: absolute;
+      bottom: 0px;
+      left: 0px;
+
+    }
+
+
+    .fourth_block {
 
       width: 50%;
       background: pink;
-      
-      }
+
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Activity 2: CSS positioning</h1>
+  <p>Style the following blocks following the instructions inside</p>
+
+  <div id="first_block">
+    <ul>
+      <li>Size: 100x50px</li>
+      <li>background: red</li>
+      <li>Position: top right, fixed to the document</li>
+      <li>Hide any content that overflows div dimensions</li>
+    </ul>
+  </div>
+
+  <div id="second_block">
+    <ul>
+      <li>Size: 100x50px</li>
+      <li>Background: blue</li>
+      <li>Position: top left, fixed to the window</li>
+      <li>Show scroll bars when content overflows div dimensions</li>
+    </ul>
+  </div>
 
 
-    </style>
-  </head>
-  <body>
-    <h1>Activity 2: CSS positioning</h1>
-    <p>Style the following blocks following the instructions inside</p>
-    
-    <div id="first_block"><ul><li>Size: 100x50px</li><li>background: red</li><li>Position: top right, fixed to the document</li><li>Hide any content that overflows div dimensions</li></ul></div>
-   
-    <div id="second_block"><ul><li>Size: 100x50px</li><li>Background: blue</li><li>Position: top left, fixed to the window</li><li>Show scroll bars when content overflows div dimensions</li></ul></div>
-  
-  
-    <div id="container">
-      I'm containing some blocks
-      <div class="third_block"><ul><li>width 50%</li><li>background: grey</li><li>Position: on the bottom left corner on the container (container) div</li></ul></div>
-      <div class="fourth_block"><ul><li>width 50%</li><li>background: pink</li></ul></div>
+  <div id="container">
+    I'm containing some blocks
+    <div class="third_block">
+      <ul>
+        <li>width 50%</li>
+        <li>background: grey</li>
+        <li>Position: on the bottom left corner on the container (container) div</li>
+      </ul>
     </div>
+    <div class="fourth_block">
+      <ul>
+        <li>width 50%</li>
+        <li>background: pink</li>
+      </ul>
+    </div>
+  </div>
 
-  </body>
+</body>
+
 </html>

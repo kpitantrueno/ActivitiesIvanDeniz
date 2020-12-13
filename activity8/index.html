@@ -1,149 +1,155 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>Activity 8: Transitions</title>
-    <style>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+  <title>Activity 8: Transitions</title>
+  <style>
+    .transition1 {
+      background-color: red;
+      border: 1px solid black;
+      position: relative;
+      overflow: hidden;
+    }
 
-     .transition1{
-       background-color: red;
-       border: 1px solid black;
-       position: relative;
-       overflow:hidden;
-     }
+    .transition1::before {
+      content: 'Hi';
+      display: block;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      background-color: blue;
+      top: -100%;
+      transition: top 1s;
+    }
 
-     .transition1::before{
-       content: 'Hi';
-       display: block;
-       width: 100%;
-       height: 100%;
-       position:absolute;
-       background-color: blue;
-       top: -100%;
-       transition: top 1s;
-     }
-
-     .transition1:hover::before{
-       top: 0;
-     }
-
+    .transition1:hover::before {
+      top: 0;
+    }
 
 
 
+    @keyframes animation2 {
 
+      from {
+        opacity: 1;
+      }
 
-
-
-     @keyframes animation2 {
-
-     from {opacity: 1; }
-     to  {opacity: 0; }
+      to {
+        opacity: 0;
+      }
 
     }
 
-    .transition2:hover{
+    .transition2:hover {
 
       animation: animation2 2s infinite;
-      
+
     }
-
-
-
-
-
 
 
     @keyframes animation3 {
 
-    from {width: 200px; }
-    to  {width: 600px; }
+      from {
+        width: 200px;
+      }
+
+      to {
+        width: 600px;
+      }
 
     }
 
-     .transition3{
-       width: 200px;
-       height: 100px;
-       border:1px solid black;
-     
-     }
+    .transition3 {
+      width: 200px;
+      height: 100px;
+      border: 1px solid black;
 
-     .transition3:hover{
-      
-       animation-name: animation3;
-       animation-duration: 2s;
-     }
+    }
 
+    .transition3:hover {
 
+      animation-name: animation3;
+      animation-duration: 2s;
+    }
 
 
 
 
-
-
-
-     @keyframes animation4 {
-      0% {color:black; }
-      25%  {color:red; }
-      50%  {color:yellow; }
-      75%  {color:green; }
-      100% {color:rgb(255, 0, 255); }
-
+    @keyframes animation4 {
+      0% {
+        color: black;
       }
 
-
-      .transition4:hover{
-        
-          animation: animation4 5s infinite;
-
+      25% {
+        color: red;
       }
 
+      50% {
+        color: yellow;
+      }
+
+      75% {
+        color: green;
+      }
+
+      100% {
+        color: rgb(255, 0, 255);
+      }
+
+    }
+
+
+    .transition4:hover {
+
+      animation: animation4 5s infinite;
+
+    }
 
 
 
+    @keyframes animation5 {
+      0% {
+        transform: rotate(0deg);
+      }
 
-   
-        @keyframes animation5{ 
-            0%{  transform: rotate(0deg); } 
-            100%{  transform: rotate(360deg);   } 
-        }
-
-
-     .transition5{
-       width: 200px;
-       height: 200px;
-       border:1px solid black;
-       display: flex;
-       flex-direction: column;
-       justify-content: center;
-       padding: 10px;
-     }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
 
 
-
-
-     .transition5:hover{ 
-            animation: animation5 1s infinite; 
-        } 
+    .transition5 {
+      width: 200px;
+      height: 200px;
+      border: 1px solid black;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 10px;
+    }
 
 
 
+    .transition5:hover {
+      animation: animation5 1s infinite;
+    }
+  </style>
+</head>
 
+<body>
+  <h1>Activity 5: Transitions</h1>
+  <div class="transition1">When mouse is over this div: hide with a element that says "Hi", that slides from above.
+  </div>
+  <div class="transition2">When mouse is over this div: it dissapears</div>
+  <div class="transition3">When mouse is over this div: it grows</div>
+  <div class="transition4">When mouse is over this div: text-color changes</div>
+  <div class="transition5">When mouse is over this div: it rotates 360 deg</div>
 
+  <p>Take a look at <a href="https://www.w3schools.com/css/css3_animations.asp">Animations</a></p>
+</body>
 
-    </style>
-  </head>
-  <body>
-    <h1>Activity 5: Transitions</h1>
-    <div class="transition1">When mouse is over this div: hide with a element that says "Hi", that slides from above.</div>
-    <div class="transition2">When mouse is over this div: it dissapears</div>
-    <div class="transition3">When mouse is over this div: it grows</div>
-    <div class="transition4">When mouse is over this div: text-color changes</div>
-    <div class="transition5">When mouse is over this div: it rotates 360 deg</div>
-
-    <p>Take a look at <a href="https://www.w3schools.com/css/css3_animations.asp">Animations</a></p>
-  </body>
 </html>
