@@ -55,7 +55,13 @@
 
 
 
+    a{
 
+      color: white;
+      font-size: medium;
+
+
+    }
 
     .contenido {
 
@@ -63,6 +69,17 @@
 
 
     }
+
+
+    footer{
+
+
+      color: white;
+    }
+
+
+
+
   </style>
 </head>
 
@@ -91,41 +108,80 @@
       <div class="container ">
 
 
+        <ul class="nav nav-tabs sticky-top bg-dark justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link" onclick="showContent1()" href="#content">Contenido 1</a>
+            </li>
+      
+          <li class="nav-item">
+            <a class="nav-link" onclick="showContent2()" href="#content">Contenido 2</a>
+          </li>
+         
+         
+        </ul>
+
+      <!--
+
         <nav class="nav sticky-top bg-dark">
           <ul class="nav nav-tabs">
-            <li class="nav-item">
-              <a class="nav-link" onclick="showContent1()" href="#">contenido 1</a>
+            <li class="nav-item ">
+    
+        
             </li>
             <li class="nav-item">
-              <a class="nav-link" onclick="showContent2()" href="#">contenido 2</a>
+              
             </li>
 
 
+      
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
                 aria-expanded="false">Enlaces externos</a>
               <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
+
+                <a class="dropdown-item" href="https://www.wikipedia.org/">Wikipedia</a>
+                <a class="dropdown-item" href="https://www.youtube.com/">Youtube</a>
+               
+
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Separated link</a>
+
+                <a class="dropdown-item" href="https://google.com/">Google</a>
+                <a class="dropdown-item" href="https://bing.com/">Bing</a>
               </div>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#">Disabled</a>
-            </li>
+           
+
+
+
+
+          
           </ul>
         </nav>
+
+ -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
         <div class="title col-12 mt-4">
 
           <h1>Activity 10: Accesibility</h1>
-          <h2>This is a nightmare webpage in terms of accesibility change <b> anything you need</b> to make it shine.</h2>
+          <h2>This is a nightmare webpage in terms of accesibility change <b> anything you need</b> to make it shine.
+          </h2>
 
 
         </div>
@@ -133,7 +189,7 @@
 
         <div class="subtitle  col-12">
 
-         
+
 
         </div>
 
@@ -273,13 +329,13 @@
 
 
           <div class="col-12 d-flex justify-content-center">
-            <img src="accesibility.png" alt=""/>
+            <img src="accesibility.png" class="img-thumbnail" alt="palabra accesibility" />
           </div>
 
 
 
 
-          <div class="contenido col-12 ">
+          <div class="contenido col-12 mt-5 mb-5">
 
 
 
@@ -337,7 +393,7 @@
 
 
 
-          </div>
+            </div>
 
 
 
@@ -354,6 +410,90 @@
 
   </div>
   <!--main-->
+
+
+
+
+
+
+
+
+
+
+<div class="container mt-5">
+
+  <footer class="bg-dark text-center text-lg-start">
+    <!-- Grid container -->
+    <div class="container p-4">
+      <!--Grid row-->
+      <div class="row">
+
+ 
+
+        <div class="col-lg-6  mb-2 ">
+          <h5 class="text-uppercase">Redes Sociales</h5>
+  
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a class="" href="https://www.wikipedia.org/">Wikipedia</a>
+            </li>
+            <li>
+              <a class="" href="https://www.youtube.com/">Youtube</a>
+            </li>
+            
+          </ul>
+        </div>
+
+
+
+
+        <div class="col-lg-6  mb-2 ">
+          <h5 class="text-uppercase">Buscadores</h5>
+  
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a class="" href="https://google.com/">Google</a>
+            </li>
+            <li>
+              <a class="" href="https://bing.com/">Bing</a>
+            </li>
+            
+          </ul>
+        </div>
+
+      </div>
+      <!--Grid row-->
+    </div>
+    <!-- Grid container -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+      © 2020 Copyright: Iván Déniz
+    </div>
+    <!-- Copyright -->
+    
+
+
+ 
+  </footer>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -391,39 +531,39 @@
 
 
 
-/*
-    var topM1 = document.getElementById('topmenu1');
-    topM1.onclick = function () {
-      ;
-      if (topM1.querySelectorAll('.topmenu-suboption').length) {
-        topM1.innerHTML = '<div class="topmenu-option">Menu 1</div>';
-      } else {
-        topM1.innerHTML = '<div class="topmenu-option">Menu 1</div><div class="topmenu-submenu"><div class="topmenu-suboption"><a href="https://google.com/">Google</div><div class="topmenu-suboption"><a href="https://bing.com/">Bing</div></div>';
-      }
-    }
-    var topM2 = document.getElementById('topmenu2');
-    topM2.onclick = function () {
-      ;
-      location.href = 'https://www.wikipedia.org/';
-    }
-    var topM3 = document.getElementById('topmenu3');
-    topM3.onclick = function () {
-      ;
-      location.href = 'https://www.youtube.com/';
-    }
-*/
+    /*
+        var topM1 = document.getElementById('topmenu1');
+        topM1.onclick = function () {
+          ;
+          if (topM1.querySelectorAll('.topmenu-suboption').length) {
+            topM1.innerHTML = '<div class="topmenu-option">Menu 1</div>';
+          } else {
+            topM1.innerHTML = '<div class="topmenu-option">Menu 1</div><div class="topmenu-submenu"><div class="topmenu-suboption"><a href="https://google.com/">Google</div><div class="topmenu-suboption"><a href="https://bing.com/">Bing</div></div>';
+          }
+        }
+        var topM2 = document.getElementById('topmenu2');
+        topM2.onclick = function () {
+          ;
+          location.href = 'https://www.wikipedia.org/';
+        }
+        var topM3 = document.getElementById('topmenu3');
+        topM3.onclick = function () {
+          ;
+          location.href = 'https://www.youtube.com/';
+        }
+    */
 
 
 
 
 
-  //  var contenido1 =  '<span class="important" style="color:#fffc16; font-size:2em;">This is the first content:<br/><img src="content1.png"></span><h1>and lot more</h1>Lorem ipsum dolor sit amet, consectetur adipisci tempor incidunt ut laboreLorem ipsum dolor sit amet, consectetur adipisci tempor incidunt ut labore<h1>content</h1><h4>is</h4><h4>important</h4>';
-   
-    var contenido1 =  '<span class="important" style="color:#fffc16; font-size:2em;">This is the first content:<br/></span><h1>and lot more</h1>Lorem ipsum dolor sit amet, consectetur adipisci tempor incidunt ut laboreLorem ipsum dolor sit amet, consectetur adipisci tempor incidunt ut labore<h1>content</h1><h4>is</h4><h4>important</h4>';
-   
-   
-    var contenido2 =   '<p><b>Lorem ipsum dolor sit amet</b>, consectetur adipisci tempor incidunt ut labore et dolore magna aliqua veniam, quis nostrud exercitation ullamcorpor s commodo consequat. Duis autem vel eum irrure esse molestiae consequat, vel illum dolore eu fugi et iusto odio dignissim qui blandit praesent luptat exceptur sint occaecat cupiditat non provident, deserunt mollit anim id est laborum et dolor fuga distinct. Nam liber tempor cum soluta nobis elige quod maxim placeat facer possim omnis volupt.</p>';
- 
+    //  var contenido1 =  '<span class="important" style="color:#fffc16; font-size:2em;">This is the first content:<br/><img src="content1.png"></span><h1>and lot more</h1>Lorem ipsum dolor sit amet, consectetur adipisci tempor incidunt ut laboreLorem ipsum dolor sit amet, consectetur adipisci tempor incidunt ut labore<h1>content</h1><h4>is</h4><h4>important</h4>';
+
+    var contenido1 = '<h3>This is the first content:</h3><h4>content</h4><h5>is</h5><h6>important</h6><p>Lorem ipsum dolor sit amet, consectetur adipisci tempor incidunt ut laboreLorem ipsum dolor sit amet, consectetur adipisci tempor incidunt ut labore</p>';
+
+
+    var contenido2 = '<p><b>Lorem ipsum dolor sit amet</b>, consectetur adipisci tempor incidunt ut labore et dolore magna aliqua veniam, quis nostrud exercitation ullamcorpor s commodo consequat. Duis autem vel eum irrure esse molestiae consequat, vel illum dolore eu fugi et iusto odio dignissim qui blandit praesent luptat exceptur sint occaecat cupiditat non provident, deserunt mollit anim id est laborum et dolor fuga distinct. Nam liber tempor cum soluta nobis elige quod maxim placeat facer possim omnis volupt.</p>';
+
 
 
 
@@ -431,15 +571,15 @@
 
 
     var content = document.getElementById('content');
-      content.innerHTML = contenido1;
+    content.innerHTML = contenido1;
 
 
 
     function showContent1() {
       var content = document.getElementById('content');
       content.innerHTML = contenido1;
-      
-     
+
+
     }
     function showContent2() {
       var content = document.getElementById('content');
