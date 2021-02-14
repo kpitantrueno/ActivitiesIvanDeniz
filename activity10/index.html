@@ -1,23 +1,3 @@
-<!--
-
-APUNTES DE CAMBIOS
-
-
--He puesto las etiquetas semanticas de nav, section, main, footer, etc.
--Añadi varios atributos arria para mejorar la accesibilidad
-
--En el javascript en lugar de introducir etiquetas meidante inyecciones he puesto un formato unico para el contenido, asi solo se inyecta texto, esl usuario siempre conocera la estructura del contneido sin sorpresas
-
-
-
-
-
-
-
-
--->
-
-
 
 <!doctype html>
 <html lang="en">
@@ -159,7 +139,7 @@ APUNTES DE CAMBIOS
 
 
 
-        <div class=" col-12 mt-4" aria-label="titulo" id="title">
+        <div class=" col-12 mt-5" aria-label="titulo" id="title">
 
           <h1 aria-labelledby="title">Activity 10: Accesibility</h1>
           <h2 aria-labelledby="title">This is a nightmare webpage in terms of accesibility change <b> anything you
@@ -366,61 +346,6 @@ APUNTES DE CAMBIOS
 
 
 
-    /*
-        var topM1 = document.getElementById('topmenu1');
-        topM1.onclick = function () {
-          ;
-          if (topM1.querySelectorAll('.topmenu-suboption').length) {
-            topM1.innerHTML = '<div class="topmenu-option">Menu 1</div>';
-          } else {
-            topM1.innerHTML = '<div class="topmenu-option">Menu 1</div><div class="topmenu-submenu"><div class="topmenu-suboption"><a href="https://google.com/">Google</div><div class="topmenu-suboption"><a href="https://bing.com/">Bing</div></div>';
-          }
-        }
-        var topM2 = document.getElementById('topmenu2');
-        topM2.onclick = function () {
-          ;
-          location.href = 'https://www.wikipedia.org/';
-        }
-        var topM3 = document.getElementById('topmenu3');
-        topM3.onclick = function () {
-          ;
-          location.href = 'https://www.youtube.com/';
-        }
-    */
-
-
-
-    //  var contenido1 =  '<span class="important" style="color:#fffc16; font-size:2em;">This is the first content:<br/><img src="content1.png"></span><h1>and lot more</h1>Lorem ipsum dolor sit amet, consectetur adipisci tempor incidunt ut laboreLorem ipsum dolor sit amet, consectetur adipisci tempor incidunt ut labore<h1>content</h1><h4>is</h4><h4>important</h4>';
-
-    //  var contenido1 = '<h3>This is the first content:</h3><h4>content</h4><h5>is</h5><h6>important</h6><p>Lorem ipsum dolor sit amet, consectetur adipisci tempor incidunt ut laboreLorem ipsum dolor sit amet, consectetur adipisci tempor incidunt ut labore</p>';
-
-    // var contenido2 = '<p><b>Lorem ipsum dolor sit amet</b>, consectetur adipisci tempor incidunt ut labore et dolore magna aliqua veniam, quis nostrud exercitation ullamcorpor s commodo consequat. Duis autem vel eum irrure esse molestiae consequat, vel illum dolore eu fugi et iusto odio dignissim qui blandit praesent luptat exceptur sint occaecat cupiditat non provident, deserunt mollit anim id est laborum et dolor fuga distinct. Nam liber tempor cum soluta nobis elige quod maxim placeat facer possim omnis volupt.</p>';
-
-
-
-    /*
-    
-        var content = document.getElementById('content');
-        content.innerHTML = contenido1;
-    
-    
-    
-        function showContent1() {
-          var content = document.getElementById('content');
-          content.innerHTML = contenido1;
-    
-    
-        }
-        function showContent2() {
-          var content = document.getElementById('content');
-          content.innerHTML = contenido2;
-        }
-    */
-
-
-
-
-
 
 
 
@@ -428,13 +353,14 @@ APUNTES DE CAMBIOS
 
     var subtitulo1 = "Cambios estructurales, semanticos, accesibles, funcionales..."
 
-    var parrafo1 = "-He puesto las etiquetas semanticas de nav, header, main, footer, etc <br><br>"+
-                   "-He redistribuido los elementos de la pagina para que tengan una estructura logica <br><br>"+
-                   "-Añadi varios atributos aria para mejorar la accesibilidad como aria-label para elementos sin contenido de texto, aria-rol para especificar el rol del elemento y arai-labelledby que funciona a la inversa del atributo for <br><br>"+
-                   "-Para que no se inyecten etiquetas nuevas desde javascript que pueda cambiar la estructura del contenido he definido una estructura fija de titulo, subtitulo y parrafo para que el usuario no se vuelva loco y el contenido tenga siempre la misma forma<br><br>"+
-                   "-Los enlaces externos los situe en el footer <br><br>"+
-                   "-La imagen del lorem ipsum con texto la quite porque como nos dijistes en clase es una mala practica, solo deje la imagen de la palabra accesibility para poner el ejemplo de que hay que usar el atributo alt para dar una descripcion de la imagen y asi mejorar la accesibilidad"
-
+    var parrafo1 = "<ul>"+ 
+                  "<li>He puesto las etiquetas semanticas de nav, header, main, footer, etc</li>"+
+                   "<li>He redistribuido los elementos de la pagina para que tengan una estructura logica</li>"+
+                   "<li>Añadi varios atributos aria para mejorar la accesibilidad como aria-label para elementos sin contenido de texto, aria-rol para especificar el rol del elemento y arai-labelledby que funciona a la inversa del atributo for </li>"+
+                   "<li>Para que no se inyecten etiquetas nuevas desde javascript que pueda cambiar la estructura del contenido he definido una estructura fija superior de titulo, subtitulo y parrafo para que el usuario no se vuelva loco y el contenido tenga siempre la misma forma</li>"+
+                   "<li>Los enlaces externos los situe en el footer </li>"+
+                   "<li>La imagen del lorem ipsum con texto la quite porque como nos dijistes en clase es una mala practica, solo deje la imagen de la palabra accesibility para poner el ejemplo de que hay que usar el atributo alt para dar una descripcion de la imagen y asi mejorar la accesibilidad</li>"+
+                   "</ul>"
                    ;
 
     var titulo2 = "Mas contenido"
