@@ -1,6 +1,6 @@
 
 <!doctype html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <!-- Required meta tags -->
@@ -126,11 +126,11 @@
         <nav>
           <ul class="nav nav-tabs bg-dark justify-content-center">
             <li class="nav-item">
-              <a class="nav-link" onclick="showContent1()" href="#content" aria-label="mostrar texto 1">Contenido 1</a>
+              <a class="nav-link" onclick="showContent1()" href="#content" aria-label="mostrar texto 1" role="option">Contenido 1</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" onclick="showContent2()" href="#content" aria-label="mostrar texto 2">Contenido 2</a>
+              <a class="nav-link" onclick="showContent2()" href="#content" aria-label="mostrar texto 2" role="option">Contenido 2</a>
             </li>
 
           </ul>
@@ -142,9 +142,8 @@
         <div class=" col-12 mt-5" aria-label="titulo" id="title">
 
           <h1 aria-labelledby="title">Activity 10: Accesibility</h1>
-          <h2 aria-labelledby="title">This is a nightmare webpage in terms of accesibility change <b> anything you
-              need</b> to make it shine.</h2>
-
+          <h2 aria-labelledby="title">This is a nightmare webpage in terms of accesibility change <span aria-label="negrita"><b>anything you
+              need</b></span> to make it shine.</h2>
 
         </div>
 
@@ -176,7 +175,7 @@
 
           <div class="col-12 d-flex justify-content-center">
             <img src="accesibility.png" class="img-thumbnail" alt="palabra accesibility"
-              aria-label="imagen con la palabra accesibility" />
+              aria-label="imagen con la palabra accesibility" role="img" />
           </div>
 
 
@@ -242,12 +241,12 @@
 
             <h5 id="redesSociales" class="text-uppercase">Redes Sociales</h5>
 
-            <ul class="list-unstyled mb-0" aria-labelledby="redesSociales">
+            <ul class="list-unstyled mb-0" aria-owns="redesSociales" role="list"  aria-describedby="redesSociales">
               <li>
-                <a class="" href="https://www.wikipedia.org/" aria-labelledby="redesSociales">Wikipedia</a>
+                <a class="" href="https://www.wikipedia.org/" aria-labelledby="redesSociales" role="link">Wikipedia</a>
               </li>
               <li>
-                <a class="" href="https://www.youtube.com/" aria-labelledby="redesSociales">Youtube</a>
+                <a class="" href="https://www.youtube.com/" aria-labelledby="redesSociales" role="link">Youtube</a>
               </li>
             </ul>
 
@@ -256,16 +255,16 @@
 
 
 
-          <div class="col-lg-6  mb-2 ">
+          <div class="col-lg-6  mb-2">
 
             <h5 id="buscadores" class="text-uppercase">Buscadores</h5>
 
-            <ul class="list-unstyled mb-0" aria-labelledby="buscadores">
+            <ul class="list-unstyled mb-0" aria-owns="buscadores" role="list" aria-describedby="buscadores">
               <li>
-                <a class="" href="https://google.com/" aria-labelledby="buscadores">Google</a>
+                <a class="" href="https://google.com/" aria-labelledby="buscadores" role="link">Google</a>
               </li>
               <li>
-                <a class="" href="https://bing.com/" aria-labelledby="buscadores">Bing</a>
+                <a class="" href="https://bing.com/" aria-labelledby="buscadores" role="link">Bing</a>
               </li>
             </ul>
 
@@ -353,7 +352,7 @@
 
     var subtitulo1 = "Cambios estructurales, semanticos, accesibles, funcionales..."
 
-    var parrafo1 = "<ul>"+ 
+    var parrafo1 = "<ul role=list>"+ 
                   "<li>He puesto las etiquetas semanticas de nav, header, main, footer, etc</li>"+
                    "<li>He redistribuido los elementos de la pagina para que tengan una estructura logica</li>"+
                    "<li>Añadi varios atributos aria para mejorar la accesibilidad como aria-label para elementos sin contenido de texto, aria-rol para especificar el rol del elemento y arai-labelledby que funciona a la inversa del atributo for </li>"+
